@@ -1,5 +1,10 @@
 # Trabalho de BI — Data Warehouse Olist (Modelo Estrela)
 
+Integrantes:
+
+- Pedro Muniz Cherulli
+- Mateus Cunha dos Santos
+
 Projeto acadêmico de construção de um **Data Warehouse dimensional** (modelo
 estrela) no **PostgreSQL** a partir do dataset público de e-commerce da **Olist**,
 com análise final no **Power BI**.
