@@ -196,6 +196,7 @@ Ordem dos scripts SQL:
 │   ├── 04_datamart.sql       # view analítica do data mart
 │   └── README.md             # guia de execução no pgAdmin
 ├── bi_build/                 # importação e dashboard no Power BI
+│   └── olist_vendas.pbix     # arquivo .pbix
 │   └── README.md             # passo a passo, KPIs e montagem do dashboard
 └── datasets/raw/             # CSVs originais da Olist (fonte dos dados)
 ```
