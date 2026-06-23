@@ -86,12 +86,3 @@ Abra `03_dw_load.sql` → **Execute** (arquivo inteiro; está numa transação
 
 Abra `04_datamart.sql` → **Execute**. Cria a view `datamart_vendas.vw_vendas`
 (deve retornar 112.650 linhas) e mostra uma amostra de 100 linhas.
-
-## FASE 6 — Conferir
-
-```sql
-SELECT * FROM datamart_vendas.vw_vendas LIMIT 100;
-```
-
-Se as linhas vierem com cidade do cliente, categoria do produto, datas de
-compra/entrega e tipo de pagamento preenchidos, o DW está pronto para o Power BI.
