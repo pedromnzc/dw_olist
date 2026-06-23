@@ -15,14 +15,14 @@ pasta `dw_build/`. Ordem dos scripts:
 
 ## FASE 1 — Schemas (`00_setup.sql`)
 
-1. No Query Tool, abra `00_setup.sql` e clique **▶ Execute** (F5).
+1. No Query Tool, abra `00_setup.sql` e clique **Execute** (F5).
 2. Saída esperada: `Schemas criados: repositorio, dw, datamart_vendas`.
 
 > O `00_setup.sql` dá `DROP ... CASCADE`. Rode-o sempre que quiser recomeçar limpo.
 
 ## FASE 2 — Repositório: criar tabelas + importar os CSVs
 
-**2a)** Abra `01_repositorio.sql` → **▶ Execute** (cria as 9 tabelas vazias, tudo `text`).
+**2a)** Abra `01_repositorio.sql` → **Execute** (cria as 9 tabelas vazias, tudo `text`).
 
 **2b)** Importe cada CSV pela interface (o `\copy` do psql NÃO funciona no pgAdmin):
 
@@ -65,11 +65,11 @@ Para cada tabela em **dw_olist → Schemas → repositorio → Tables**:
 
 ## FASE 3 — Estrutura do DW (`02_dw_ddl.sql`)
 
-Abra `02_dw_ddl.sql` → **▶ Execute**. Cria as 6 dimensões + `fato_vendas` com PKs e FKs.
+Abra `02_dw_ddl.sql` → **Execute**. Cria as 6 dimensões + `fato_vendas` com PKs e FKs.
 
 ## FASE 4 — ETL e carga (`03_dw_load.sql`)
 
-Abra `03_dw_load.sql` → **▶ Execute** (arquivo inteiro; está numa transação
+Abra `03_dw_load.sql` → **Execute** (arquivo inteiro; está numa transação
 `BEGIN…COMMIT`). Contagens esperadas:
 
 | tabela | linhas |
